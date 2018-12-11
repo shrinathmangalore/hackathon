@@ -8,7 +8,7 @@ node {
         sh 'mvn clean package'
     }
    stage('Build Docker image'){
-      sh 'docker build -t shrinathdm/maven-web-application'
+      sh 'docker build -t shrinathdm/maven-web-application .'
    }
    stage('Push Docker image'){
       withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'Docker_Hub_Pwd')]) {
