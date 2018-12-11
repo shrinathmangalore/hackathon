@@ -15,4 +15,5 @@ node {
          sh "docker login -u shrinathdm -p ${Docker_Hub_Pwd}"
        }
        sh 'docker push shrinathdm/maven-web-application'
+   }
 }
