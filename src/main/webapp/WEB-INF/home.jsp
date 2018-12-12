@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<spring:url value="harman" var="harman" />
+<spring:url value="harman.png" var="harman" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome to Harman Hackathon</title>
 <link href="${harman}" rel="icon">
@@ -24,9 +24,6 @@
 		Harman technologies Bangalore
 	</span>
 </div>
-<hr>
-	<p> Service : <a href="${pageContext.request.contextPath}/services/getEmployeeDetails">Get Employee Details </p>
-<hr>
 <p align=center>Harman</p>
 <p align=center><small>Copyrights 2018 by <a href="http://harman.com/">Harman Technologies</a> </small></p>
 
