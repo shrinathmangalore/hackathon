@@ -108,13 +108,13 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-releases/</url>
+	      <name>devopsproject</name>
+	      <url>http://ec2-35-173-49-126.compute-1.amazonaws.com:8081/repository/devopsproject/</url>
 	    </repository>
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-snapshot/</url>
+	      <name>devopsproj </name>
+	      <url>http://ec2-35-173-49-126.compute-1.amazonaws.com:8081/repository/devopsproj/</url>
 	    </snapshotRepository>
 	</distributionManagement>
 	
