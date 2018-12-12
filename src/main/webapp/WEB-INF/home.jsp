@@ -5,15 +5,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<spring:url value="/resources/images/mithunlogo.jpg" var="mithunlogo" />
+<spring:url value="https://www.google.co.in/search?q=harman+logo&rlz=1C1GCEU_enIN825IN827&tbm=isch&source=iu&ictx=1&fir=GmwhI181t_vSgM%253A%252C3yG4HpXv0BcjxM%252C_&usg=AI4_-kRaUz17Nez4KSF6O3xWJs4k27Jg8Q&sa=X&ved=2ahUKEwjZ8fD3kprfAhUHTn0KHeqjDogQ9QEwAHoECAUQBA#imgrc=GmwhI181t_vSgM:" var="mithunlogo" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
+<title>Welcome to Harman Hackathon</title>
 <link href="${mithunlogo}" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies.</h1>
-<h1 align="center">Very Good Training center for DevOps in Maratha Halli and also for Job Assitance... and Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center">Welcome to Harman Devops Hackathon</h1>
+<h1 align="center">DevOps is the blending of the terms development and operations, meant to represent a collaborative or shared approach to the tasks performed by a company's application development and IT operations teams. </h1>
 <hr>
 <div style="text-align: center;">
 	<span>
@@ -21,17 +21,14 @@
 
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Martha Halli,Opp To Madhurai Iddly House
-		Bangalore.
-		+91-9980923226
+		Harman technologies Bangalore
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="${pageContext.request.contextPath}/services/getEmployeeDetails">Get Employee Details </p>
 <hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2018 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
+<p align=center>Harman</p>
+<p align=center><small>Copyrights 2018 by <a href="http://harman.com/">Mithun Technologies</a> </small></p>
 
 </body>
 </html>
