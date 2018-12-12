@@ -84,24 +84,7 @@
 		</dependency>
 
 	</dependencies>
-	
-	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-releases/</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-snapshot/</url>
-	    </snapshotRepository>
-	</distributionManagement>
-	
-	<build>
-		<finalName>maven-web-application</finalName>
-		<plugins>
-			<profiles>
+<profiles>
         <profile>
             <id>sonar</id>
             <activation>
@@ -121,8 +104,23 @@
               </plugins>
             </build>
         </profile>
-  </profiles>
-
+  </profiles>	
+	<distributionManagement>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-releases/</url>
+	    </repository>
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://localhost:8085/mithuntechnologies/repository/flipkart-snapshot/</url>
+	    </snapshotRepository>
+	</distributionManagement>
+	
+	<build>
+		<finalName>maven-web-application</finalName>
+		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -134,7 +132,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
-
-	
+	</build>	
 </project>
