@@ -101,6 +101,28 @@
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
+			<profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>http://ec2-18-215-240-221.compute-1.amazonaws.com:9000/</sonar.host.url>
+     <sonar-maven-plugin.version>3.3.0.603</sonar-maven-plugin.version>
+            </properties>
+            <build>
+              <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar-maven-plugin.version}</version>
+                </plugin>
+              </plugins>
+            </build>
+        </profile>
+  </profiles>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
