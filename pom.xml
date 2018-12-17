@@ -22,7 +22,6 @@
 		<spring.version>5.0.2.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://localhost:9000/</sonar.host.url>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -84,40 +83,7 @@
 		</dependency>
 
 	</dependencies>
-<profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <sonar.host.url>http://ec2-18-215-240-221.compute-1.amazonaws.com:9000/</sonar.host.url>
-     <sonar-maven-plugin.version>3.3.0.603</sonar-maven-plugin.version>
-            </properties>
-            <build>
-              <plugins>
-                <plugin>
-                    <groupId>org.sonarsource.scanner.maven</groupId>
-                    <artifactId>sonar-maven-plugin</artifactId>
-                    <version>${sonar-maven-plugin.version}</version>
-                </plugin>
-              </plugins>
-            </build>
-        </profile>
-  </profiles>	
-	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>devopsproject</name>
-	      <url>http://ec2-35-173-49-126.compute-1.amazonaws.com:8081/repository/devopsproject/</url>
-	    </repository>
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>devopsproj </name>
-	      <url>http://ec2-35-173-49-126.compute-1.amazonaws.com:8081/repository/devopsproj/</url>
-	    </snapshotRepository>
-	</distributionManagement>
-	
+
 	<build>
 		<finalName>maven-web-application</finalName>
 		<plugins>
